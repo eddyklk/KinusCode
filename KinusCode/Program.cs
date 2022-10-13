@@ -2,7 +2,7 @@
 
 
 int No1, No2, No3, No4, No5, No6, No7 , No8 , No9 , No10, NumG;
-int No1r, No2r, No3r, No4r, No5r, No6r, No7r, No8r, No9r, No10r;
+double No1r, No2r, No3r, No4r, No5r, No6r, No7r, No8r, No9r, No10r;
 int num1 = 1, num2 = 2, num3 = 3, num4 = 4, num5 = 5, num6 = 6, num7 = 7, num8 = 8, num9 = 9, num10 = 10,
     num11 = 11, num12 = 12, num13 = 13, num14 = 14, num15 = 15, num16 = 16, num17 = 17, num18 = 18, num19 = 19, num20 = 20,
     num21 = 21, num22 = 22, num23 = 23, num24 = 24, num25 = 25, num26 = 26, num27 = 27, num28 = 28, num29 = 29, num30 = 30,
@@ -42,13 +42,20 @@ Console.ReadKey();
 
 
 
-if ( No1 > num78 )
+if (No1 > num78)
 {
     Console.WriteLine("El numero no puede ser mayor a 78.");
     return;
 
-   
-}else if ( No1 == num1 )
-{
-    No1r = No1;
+
 }
+else if (No1 < 0)
+{
+    Console.WriteLine("El numero no puede ser menor a 0.");
+
+}
+else if (No1 == num1)
+{
+    No1;
+}
+Console.ReadKey();
