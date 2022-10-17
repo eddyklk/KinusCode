@@ -1,8 +1,31 @@
 ﻿int r1  = 80, r2  = 80, r3  = 5, r4   = 6, r5   = 7, r6   = 8, r7   = 9, r8   = 10, r9  = 11, r10 = 12,
-    r11 = 13, r12 = 14, r13 = 15, r14 = 16, r15 = 17, r16 = 18, r17 = 19, r18 = 20, r19 = 21, r20 = 22;
+    r11 = 13, r12 = 14, r13 = 15, r14 = 16, r15 = 17, r16 = 18, r17 = 19, r18 = 20, r19 = 21, r20 = 22, r21;
 
-List<int> lista = new List<int>()  
-{   1,2,3,4,5,6,7,8,9,
+Console.WriteLine("Digite la jugada");
+r21 = Convert.ToInt32(Console.ReadLine());
+
+if (r21 >= 1 && r21 <= 80 )
+{
+    Console.WriteLine("El valor de r21 es: {0}",r21);   
+    return;
+
+}
+else if(r21 < 1)
+{
+    Console.WriteLine("Los numero no pueden ser menor que 0.");
+    return;
+}
+else  if (r21 > 80)
+{
+    Console.WriteLine("Los numero no pueden ser mayor que 80.");
+    return;
+
+}
+
+
+List<int> lista = new List<int>()
+{ 
+    1,2,3,4,5,6,7,8,9,
     10,11,12,13,14,15,16,17,18,19,
     20,21,22,23,24,25,26,27,28,29,
     30,31,32,33,34,35,36,37,38,39,
@@ -13,7 +36,8 @@ List<int> lista = new List<int>()
     80
 };
 
-for (int i = 0; i < lista.Count; i++)
+
+
 // Primera jugada
 lista.Remove(r1);
 lista.Remove(r2);
@@ -44,36 +68,12 @@ Console.WriteLine("Numeros que restan.");
 
 foreach (var numero in lista)
 {
-    Console.WriteLine(numero);
+    Console.Write(numero + ",");
 }
 
-
-
-
 Console.WriteLine();
-Console.WriteLine("Arreglo  Numero que se repiten 1");
-
-foreach (var grouping in lista.GroupBy(t => t).Where(t => t.Count() != 1))
-{
-    Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
-}
-
-
-
-
-
-
-//foreach (var comparar in lista)
-//{
-//    if ()
-//    {
-
-//    }
-//}
-
-
 Console.WriteLine();
-Console.WriteLine("Arreglo  Numero que se repiten 2");
+Console.WriteLine("Numero que se repiten.");
 
 int[] valores = new[]
 {  1,2,3,4,5,6,7,8,9,
@@ -84,9 +84,82 @@ int[] valores = new[]
     50,51,52,53,54,55,56,57,58,59,
     60,61,62,63,64,65,66,67,68,69,
     70,71,72,73,74,75,76,77,78,79,
-    80,80 };
+    80,80,r3};
+
+
+
 
 foreach (var grouping in valores.GroupBy(t => t).Where(t => t.Count() != 1))
+{
+    Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+}
+
+ 
+
+
+//------------------------------------------ 
+
+
+//------------------------------------------
+Console.WriteLine();
+
+
+List<int> lista2 = new List<int> { 2, 5, 6, 6, 11, 1, 1, 2, 3, 3 };
+
+var listaDistinct = lista2.Distinct();
+
+Console.Write("Numero que son unicos: ");
+foreach (int num in listaDistinct)
+{
+    
+    Console.Write(num + "," );
+
+}
+
+
+//------------------------------------------
+
+Console.WriteLine();
+Console.WriteLine("Prueba 3");
+List<int> lista3 = new List<int>()
+{
+    1,2,3,4,5,6,7,8,9,
+    10,11,12,13,14,15,16,17,18,19,
+    20,21,22,23,24,25,26,27,28,29,
+    30,31,32,33,34,35,36,37,38,39,
+    40,41,42,43,44,45,46,47,48,49,
+    50,51,52,53,54,55,56,57,58,59,
+    60,61,62,63,64,65,66,67,68,69,
+    70,71,72,73,74,75,76,77,78,79,
+    80
+};
+
+lista.Add(r1);
+lista.Add(r2);
+lista.Add(r3);
+lista.Add(r4);
+lista.Add(r5);
+lista.Add(r6);
+lista.Add(r7);
+lista.Add(r8);
+lista.Add(r9);
+lista.Add(r10);
+
+// Segunda jugada
+lista.Add(r11);
+lista.Add(r12);
+lista.Add(r13);
+lista.Add(r14);
+lista.Add(r15);
+lista.Add(r16);
+lista.Add(r17);
+lista.Add(r18);
+lista.Add(r19);
+lista.Add(r20);
+
+
+
+foreach (var grouping in lista3.GroupBy(t => t).Where(t => t.Count() != 1))
 {
     Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
 }
