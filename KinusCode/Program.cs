@@ -216,17 +216,20 @@ int[] valores = new[]{
     }
 
 
-    //------------------------------------------
+//------------------------------------------
 
 
+//crear numero random a partir de los que existen en la variable num
 
 
+    Random rnd = new Random();
+    int randIndex = rnd.Next(lista2.Count);
+    int random = lista2[randIndex];
+
+    Console.WriteLine(random);
 
 
-    crear numero random a partir de los que existen en la variable num
-
-
-    Console.ReadKey();
+Console.ReadKey();
 
 
 
