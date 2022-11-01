@@ -220,6 +220,12 @@ int[] valores = new[]{
 
 
 
+
+
+
+    crear numero random a partir de los que existen en la variable num
+
+
     Console.ReadKey();
 
 
