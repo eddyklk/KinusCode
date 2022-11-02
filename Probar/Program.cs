@@ -36,12 +36,17 @@ namespace Probar
             Console.Write("{0,3}", rand.Next(81));
             Console.WriteLine();
 
-          
 
-         
+            MuestraFrase(1, 2, 2, 3, 4);
+            }
+
+            public static void MuestraFrase(params int[] palabras)
+            {
+                Console.WriteLine(string.Join(" ", palabras));
+                Console.ReadLine();
 
 
-            Console.ReadKey();
-        }
+                Console.ReadKey();
+            }
     }
 }

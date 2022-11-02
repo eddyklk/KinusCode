@@ -222,11 +222,24 @@ int[] valores = new[]{
 //crear numero random a partir de los que existen en la variable num
 
 
+
     Random rnd = new Random();
     int randIndex = rnd.Next(lista2.Count);
     int random = lista2[randIndex];
+    
 
     Console.WriteLine(random);
+
+
+Console.ForegroundColor = ConsoleColor.Green;
+Console.Write("Numero Jugados: ");
+
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.Write(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5 + " " + r6 + " " + r7 + " " + r8 + " " + r9 + " " + r10 + " " +
+    r11 + " " + r12 + " " + r13 + " " + r14 + " " + r15 + " " + r16 + " " + r17 + " " + r18 + " " + r19 + " " + r20 + " " +
+    r21 + " " + r22 + " " + r23 + " " + r24 + " " + r25 + " " + r26 + " " + r27 + " " + r28 + " " + r29 + " " + r30 + " " +
+    r31 + " " + r32 + " " + r33 + " " + r34 + " " + r35 + " " + r36 + " " + r37 + " " + r38 + " " + r39 + " " + r40);
+
 
 
 Console.ReadKey();
