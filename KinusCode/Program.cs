@@ -1,12 +1,9 @@
 ﻿
-Console.ForegroundColor = ConsoleColor.Yellow;
-Console.Write("Bienvenido a Kinus intento hacerte");
-Console.ForegroundColor = ConsoleColor.Green;
-Console.Write(" MILLONARIO");
-Console.ForegroundColor = ConsoleColor.Yellow;
-Console.WriteLine(" :)");
-Console.ForegroundColor = ConsoleColor.White;
-Console.WriteLine("Ahora ");
+
+
+
+
+
 
 
 //jugada 1
@@ -18,10 +15,49 @@ r21 = 0, r22 = 0, r23 = 0, r24 = 0, r25 = 0, r26 = 0, r27 = 0, r28 = 0, r29 = 0,
 //Jugara 3
 r31 = 0, r32 = 0, r33 = 0, r34 = 0, r35 = 0, r36 = 0, r37 = 0, r38 = 0, r39 = 0, r40 = 0,
 //numero que salieron
-s1 = 0, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20;
+s1 = 0, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, numjugada;
 bool jugada;
 
-//Para digitar numero y procesarlo de mayor que 1 y menos que 80. 
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.Write("Bienvenido a Kinus intento hacerte");
+Console.ForegroundColor = ConsoleColor.Green;
+Console.Write(" MILLONARIO");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine(" :)");
+Console.ForegroundColor = ConsoleColor.White;
+Console.WriteLine("Ahora, dime cuantas jugadas quieres agregar? ");
+numjugada = Convert.ToInt32(Console.ReadLine());
+
+switch (numjugada)
+{
+    case 1:
+
+        
+
+
+
+
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+
+
+
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+
+
+
+        break;
+    case 4:
+        Console.WriteLine("Thursday");
+
+
+
+        break;
+}
 
 //ciclo anidado un while dentro de otro while. 
 Console.ForegroundColor = ConsoleColor.White;
