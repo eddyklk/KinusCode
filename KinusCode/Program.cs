@@ -887,11 +887,29 @@ int[] valores = new[]{
     Console.Write("Numero Jugados: ");
 
     Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5 + " " + r6 + " " + r7 + " " + r8 + " " + r9 + " " + r10 + " " +
-    r11 + " " + r12 + " " + r13 + " " + r14 + " " + r15 + " " + r16 + " " + r17 + " " + r18 + " " + r19 + " " + r20 + " " +
-    r21 + " " + r22 + " " + r23 + " " + r24 + " " + r25 + " " + r26 + " " + r27 + " " + r28 + " " + r29 + " " + r30 + " " +
-    r31 + " " + r32 + " " + r33 + " " + r34 + " " + r35 + " " + r36 + " " + r37 + " " + r38 + " " + r39 + " " + r40);
+    
+    
+    switch(numjugada)
+    {
+        case 1:
+        Console.Write(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5 +
+            " " + r6 + " " + r7 + " " + r8 + " " + r9 + " " + r10);
+            break; 
+    
+        case 2:
+        Console.Write(r11 + " " + r12 + " " + r13 + " " + r14 + " " + r15 +
+        " " + r16 + " " + r17 + " " + r18 + " " + r19 + " " + r20);
+        break;
+        case 3:
+        Console.Write(r21 + " " + r22 + " " + r23 + " " + r24 + " " + r25 +
+        " " + r26 + " " + r27 + " " + r28 + " " + r29 + " " + r30);
+        break;
 
+        case 4:
+        Console.WriteLine(r31 + " " + r32 + " " + r33 + " " + r34 + " " + r35 +
+        " " + r36 + " " + r37 + " " + r38 + " " + r39 + " " + r40);
+        break;
+    }
 
 Console.WriteLine();
 jugada = true;
@@ -909,17 +927,24 @@ Console.WriteLine();
 Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine("Numeros que coinciden que tu jugada: ");
 
-int[] coinciden = new[]{
-    r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-    r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-    r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
-    r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
 
-
-foreach (var grouping in coinciden.GroupBy(t => t).Where(t => t.Count() != 1))
+switch (numjugada)
 {
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+    case 1:
+        int[] coinciden = new[]{
+
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
+        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+
+
+        foreach (var grouping in coinciden.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
 }
 
 
