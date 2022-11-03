@@ -1,14 +1,16 @@
 ﻿
-//jugada 1
-using System.Runtime.Intrinsics;
 
+//jugada 1
 int r1 = 0, r2 = 0, r3 = 0, r4 = 0, r5 = 0, r6 = 0, r7 = 0, r8 = 0, r9 = 0, r10 = 0,
 //jugada 2
 r11 = 0, r12 = 0, r13 = 0, r14 = 0, r15 = 0, r16 = 0, r17 = 0, r18 = 0, r19 = 0, r20 = 0,
 //Jugara 3
 r21 = 0, r22 = 0, r23 = 0, r24 = 0, r25 = 0, r26 = 0, r27 = 0, r28 = 0, r29 = 0, r30 = 0,
 //Jugara 3
-r31 = 0, r32 = 0, r33 = 0, r34 = 0, r35 = 0, r36 = 0, r37 = 0, r38 = 0, r39 = 0, r40 = 0;
+r31 = 0, r32 = 0, r33 = 0, r34 = 0, r35 = 0, r36 = 0, r37 = 0, r38 = 0, r39 = 0, r40 = 0,
+//numero que salieron
+s1 = 0, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20;
+bool jugada;
 
 //Para digitar numero y procesarlo de mayor que 1 y menos que 80. 
 
@@ -118,6 +120,92 @@ while (
 (r10 < 1 || r10 > 80)
 );
 
+Console.ReadKey();
+
+
+Console.ForegroundColor = ConsoleColor.Blue;
+Console.WriteLine("Quieres registrar los numeros que salieron?. ");
+Console.WriteLine("Escriba True en caso si o escriba false en caso de que no. ");
+jugada = Convert.ToBoolean( Console.ReadLine());
+Console.ReadKey();
+
+
+Console.ForegroundColor = ConsoleColor.White;
+
+do
+{
+    do
+    {
+        Console.WriteLine("Digite el primer numero  entre el 1 y el 20");
+        s1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el segundo numero entre el 1 y el 20");
+        s2 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el tercer numero  entre el 1 y el 20");
+        s3 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el cuarto numero  entre el 1 y el 20");
+        s4 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el quinto numero  entre el 1 y el 20");
+        s5 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el sexto numero   entre el 1 y el 20");
+        s6 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el septimo numero entre el 1 y el 20");
+        s7 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el octavo numero  entre el 1 y el 20");
+        s8 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el noveno numero  entre el 1 y el 20");
+        s9 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimo numero  entre el 1 y el 20");
+        s10 = Convert.ToInt32(Console.ReadLine());
+
+        //jugada 2
+        Console.WriteLine("Digite el decimoprimer numero  entre el 1 y el 20");
+        s11 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimosegundo numero entre el 1 y el 20");
+        s12 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimotercer numero  entre el 1 y el 20");
+        s13 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimocuarto numero  entre el 1 y el 20");
+        s14 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimoquinto numero  entre el 1 y el 20");
+        s15 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimosexto numero   entre el 1 y el 20");
+        s16 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimoseptimo numero entre el 1 y el 20");
+        s17 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimoctavo numero  entre el 1 y el 20");
+        s18 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el decimonoveno numero  entre el 1 y el 20");
+        s19 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Digite el vigésimo numero  entre el 1 y el 20");
+        s20 = Convert.ToInt32(Console.ReadLine());
+    }
+    while (
+        (r1 < 1 || r1 > 20) &&
+        (r2 < 1 || r2 > 20) &&
+        (r3 < 1 || r3 > 20) &&
+        (r4 < 1 || r4 > 20) &&
+        (r5 < 1 || r5 > 20) &&
+        (r6 < 1 || r6 > 20) &&
+        (r7 < 1 || r7 > 20) &&
+        (r8 < 1 || r8 > 20) &&
+        (r9 < 1 || r9 > 20) &&
+        (r10 < 1 || r10 > 20)
+        );
+
+}
+
+while (jugada == true) 
+//(r1 < 1 || r1 > 80) &&
+//(r2 < 1 || r2 > 80) &&
+//(r3 < 1 || r3 > 80) &&
+//(r4 < 1 || r4 > 80) &&
+//(r5 < 1 || r5 > 80) &&
+//(r6 < 1 || r6 > 80) &&
+//(r7 < 1 || r7 > 80) &&
+//(r8 < 1 || r8 > 80) &&
+//(r9 < 1 || r9 > 80) &&
+//(r10 < 1 || r10 > 80)
+;
 
 Console.WriteLine();
 Console.ForegroundColor = ConsoleColor.Green;
@@ -231,14 +319,40 @@ int[] valores = new[]{
     Console.WriteLine(random);
 
 
-Console.ForegroundColor = ConsoleColor.Green;
-Console.Write("Numero Jugados: ");
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.Write("Numero Jugados: ");
 
     Console.ForegroundColor = ConsoleColor.Red;
     Console.Write(r1 + " " + r2 + " " + r3 + " " + r4 + " " + r5 + " " + r6 + " " + r7 + " " + r8 + " " + r9 + " " + r10 + " " +
     r11 + " " + r12 + " " + r13 + " " + r14 + " " + r15 + " " + r16 + " " + r17 + " " + r18 + " " + r19 + " " + r20 + " " +
     r21 + " " + r22 + " " + r23 + " " + r24 + " " + r25 + " " + r26 + " " + r27 + " " + r28 + " " + r29 + " " + r30 + " " +
     r31 + " " + r32 + " " + r33 + " " + r34 + " " + r35 + " " + r36 + " " + r37 + " " + r38 + " " + r39 + " " + r40);
+
+if (jugada == true)
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.Write("Numero que salieron: ");
+
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.Write(s1 + " " + s2 + " " + s3 + " " + s4 + " " + s5 + " " + s6 + " " + s7 + " " + s8 + " " + s9 + " " + s10 + " " +
+        s11 + " " + s12 + " " + s13 + " " + s14 + " " + s15 + " " + s16 + " " + s17 + " " + s18 + " " + s19 + " " + s20);
+}
+
+Console.ForegroundColor = ConsoleColor.Green;
+Console.WriteLine("Numeros que coinciden que tu jugada: ");
+
+int[] coinciden = new[]{
+    r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+    r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+    r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
+    r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+
+
+foreach (var grouping in coinciden.GroupBy(t => t).Where(t => t.Count() != 1))
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+}
 
 
 
