@@ -789,7 +789,7 @@ switch (numjugada)
         foreach (var numero in listar1)
             {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(numero + ",");
+            Console.Write(numero + " ");
             }
 
         break;
@@ -843,7 +843,7 @@ switch (numjugada)
         foreach (var numero in listar2)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(numero + ",");
+            Console.Write(numero + " ");
         }
 
         break;
@@ -908,7 +908,7 @@ switch (numjugada)
         foreach (var numero in listar3)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(numero + ",");
+            Console.Write(numero + " ");
         }
 
         break;
@@ -984,7 +984,7 @@ switch (numjugada)
         foreach (var numero in listar4)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(numero + ",");
+            Console.Write(numero + " ");
         }
 
         break;
@@ -997,7 +997,7 @@ switch (numjugada)
     Console.WriteLine();
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Green;
-    Console.WriteLine("Numero que se repiten.");
+    Console.WriteLine("Numero que se repiten: ");
 
 switch(numjugada)
 
@@ -1060,6 +1060,10 @@ switch(numjugada)
         }
         break;
 
+    default:
+        Console.WriteLine("No se repiten numeros");
+        break;
+
 }
 
     //------------------------------------------ 
@@ -1083,7 +1087,7 @@ switch (numjugada)
         foreach (int num in listaDistinct1)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(num + ",");
+            Console.Write(num + " ");
 
         }
         break;
@@ -1102,7 +1106,7 @@ switch (numjugada)
         foreach (int num in listaDistinct2)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(num + ",");
+            Console.Write(num + " ");
 
         }
         break;
@@ -1122,7 +1126,7 @@ switch (numjugada)
         foreach (int num in listaDistinct3)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(num + ",");
+            Console.Write(num + " ");
 
         }
         break;
@@ -1143,7 +1147,7 @@ switch (numjugada)
         foreach (int num in listaDistinct4)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(num + ",");
+            Console.Write(num + " ");
 
         }
         break;
@@ -1153,14 +1157,14 @@ switch (numjugada)
 
 //crear numero random a partir de los que existen en la variable num
 
-
-
-    Random rnd = new Random();
-    int randIndex = rnd.Next(lista2.Count);
-    int random = lista2[randIndex];
     
 
-    Console.WriteLine(random);
+    //Random rnd = new Random();
+    //int randIndex = rnd.Next(lista2.Count);
+    //int random = lista2[randIndex];
+    
+
+    //Console.WriteLine(random);
 
     Console.WriteLine();
     Console.ForegroundColor = ConsoleColor.Green;
