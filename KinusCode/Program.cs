@@ -15,7 +15,7 @@ r21 = 0, r22 = 0, r23 = 0, r24 = 0, r25 = 0, r26 = 0, r27 = 0, r28 = 0, r29 = 0,
 //Jugara 3
 r31 = 0, r32 = 0, r33 = 0, r34 = 0, r35 = 0, r36 = 0, r37 = 0, r38 = 0, r39 = 0, r40 = 0,
 //numero que salieron
-s1 = 0, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, numjugada;
+s1 , s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15, s16, s17, s18, s19, s20, numjugada;
 bool jugada;
 
 
@@ -1217,7 +1217,7 @@ switch (numjugada)
     case 1:
         int[] coinciden = new[]{
 
-        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10};
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
 
 
         foreach (var grouping in coinciden.GroupBy(t => t).Where(t => t.Count() != 1))
@@ -1231,7 +1231,7 @@ switch (numjugada)
         int[] coinciden2 = new[]{
 
         r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20};
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
 
 
         foreach (var grouping in coinciden2.GroupBy(t => t).Where(t => t.Count() != 1))
@@ -1246,7 +1246,8 @@ switch (numjugada)
 
         r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
         r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30 };
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
 
 
         foreach (var grouping in coinciden3.GroupBy(t => t).Where(t => t.Count() != 1))
@@ -1262,7 +1263,8 @@ switch (numjugada)
         r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
         r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
         r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
-        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40,
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
 
 
         foreach (var grouping in coinciden4.GroupBy(t => t).Where(t => t.Count() != 1))
