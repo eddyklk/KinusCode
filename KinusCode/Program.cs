@@ -751,78 +751,248 @@ Console.WriteLine();
 Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine("Numeros que restan.");
 
-List<int> lista = new List<int>()
+switch (numjugada)
 {
-    1,2,3,4,5,6,7,8,9,
-    10,11,12,13,14,15,16,17,18,19,
-    20,21,22,23,24,25,26,27,28,29,
-    30,31,32,33,34,35,36,37,38,39,
-    40,41,42,43,44,45,46,47,48,49,
-    50,51,52,53,54,55,56,57,58,59,
-    60,61,62,63,64,65,66,67,68,69,
-    70,71,72,73,74,75,76,77,78,79,
-    80
-};
+    case 1:
+        List<int> listar1 = new List<int>()
+        {
+            1,2,3,4,5,6,7,8,9,
+            10,11,12,13,14,15,16,17,18,19,
+            20,21,22,23,24,25,26,27,28,29,
+            30,31,32,33,34,35,36,37,38,39,
+            40,41,42,43,44,45,46,47,48,49,
+            50,51,52,53,54,55,56,57,58,59,
+            60,61,62,63,64,65,66,67,68,69,
+            70,71,72,73,74,75,76,77,78,79,
+            80
+        };
 
 
 
-    // Primera jugada
-    lista.Remove(r1);
-    lista.Remove(r2);
-    lista.Remove(r3);
-    lista.Remove(r4);
-    lista.Remove(r5);
-    lista.Remove(r6);
-    lista.Remove(r7);
-    lista.Remove(r8);
-    lista.Remove(r9);
-    lista.Remove(r10);
+            // Primera jugada
+            listar1.Remove(r1);
+            listar1.Remove(r2);
+            listar1.Remove(r3);
+            listar1.Remove(r4);
+            listar1.Remove(r5);
+            listar1.Remove(r6);
+            listar1.Remove(r7);
+            listar1.Remove(r8);
+            listar1.Remove(r9);
+            listar1.Remove(r10);
 
-    // Segunda jugada
-    lista.Remove(r11);
-    lista.Remove(r12);
-    lista.Remove(r13);
-    lista.Remove(r14);
-    lista.Remove(r15);
-    lista.Remove(r16);
-    lista.Remove(r17);
-    lista.Remove(r18);
-    lista.Remove(r19);
-    lista.Remove(r20);
-
-    // tercera jugada
-    lista.Remove(r21);
-    lista.Remove(r22);
-    lista.Remove(r23);
-    lista.Remove(r24);
-    lista.Remove(r25);
-    lista.Remove(r26);
-    lista.Remove(r27);
-    lista.Remove(r28);
-    lista.Remove(r29);
-    lista.Remove(r30);
-
-    // Cuarta jugada
-    lista.Remove(r31);
-    lista.Remove(r32);
-    lista.Remove(r33);
-    lista.Remove(r34);
-    lista.Remove(r35);
-    lista.Remove(r36);
-    lista.Remove(r37);
-    lista.Remove(r38);
-    lista.Remove(r39);
-    lista.Remove(r40);
+           
 
 
 
 
+        foreach (var numero in listar1)
+            {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(numero + ",");
+            }
 
-foreach (var numero in lista)
-    {
-    Console.ForegroundColor = ConsoleColor.Yellow;
-    Console.Write(numero + ",");
-    }
+        break;
+
+    case 2:
+        List<int> listar2 = new List<int>()
+        {
+            1,2,3,4,5,6,7,8,9,
+            10,11,12,13,14,15,16,17,18,19,
+            20,21,22,23,24,25,26,27,28,29,
+            30,31,32,33,34,35,36,37,38,39,
+            40,41,42,43,44,45,46,47,48,49,
+            50,51,52,53,54,55,56,57,58,59,
+            60,61,62,63,64,65,66,67,68,69,
+            70,71,72,73,74,75,76,77,78,79,
+            80
+        };
+
+
+
+        // Primera jugada
+        listar2.Remove(r1);
+        listar2.Remove(r2);
+        listar2.Remove(r3);
+        listar2.Remove(r4);
+        listar2.Remove(r5);
+        listar2.Remove(r6);
+        listar2.Remove(r7);
+        listar2.Remove(r8);
+        listar2.Remove(r9);
+        listar2.Remove(r10);
+
+        // Segunda jugada
+        listar2.Remove(r11);
+        listar2.Remove(r12);
+        listar2.Remove(r13);
+        listar2.Remove(r14);
+        listar2.Remove(r15);
+        listar2.Remove(r16);
+        listar2.Remove(r17);
+        listar2.Remove(r18);
+        listar2.Remove(r19);
+        listar2.Remove(r20);
+
+       
+
+
+
+
+
+        foreach (var numero in listar2)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(numero + ",");
+        }
+
+        break;
+
+    case 3:
+        List<int> listar3 = new List<int>()
+        {
+            1,2,3,4,5,6,7,8,9,
+            10,11,12,13,14,15,16,17,18,19,
+            20,21,22,23,24,25,26,27,28,29,
+            30,31,32,33,34,35,36,37,38,39,
+            40,41,42,43,44,45,46,47,48,49,
+            50,51,52,53,54,55,56,57,58,59,
+            60,61,62,63,64,65,66,67,68,69,
+            70,71,72,73,74,75,76,77,78,79,
+            80
+        };
+
+
+
+        // Primera jugada
+        listar3.Remove(r1);
+        listar3.Remove(r2);
+        listar3.Remove(r3);
+        listar3.Remove(r4);
+        listar3.Remove(r5);
+        listar3.Remove(r6);
+        listar3.Remove(r7);
+        listar3.Remove(r8);
+        listar3.Remove(r9);
+        listar3.Remove(r10);
+
+        // Segunda jugada
+        listar3.Remove(r11);
+        listar3.Remove(r12);
+        listar3.Remove(r13);
+        listar3.Remove(r14);
+        listar3.Remove(r15);
+        listar3.Remove(r16);
+        listar3.Remove(r17);
+        listar3.Remove(r18);
+        listar3.Remove(r19);
+        listar3.Remove(r20);
+
+        // tercera jugada
+        listar3.Remove(r21);
+        listar3.Remove(r22);
+        listar3.Remove(r23);
+        listar3.Remove(r24);
+        listar3.Remove(r25);
+        listar3.Remove(r26);
+        listar3.Remove(r27);
+        listar3.Remove(r28);
+        listar3.Remove(r29);
+        listar3.Remove(r30);
+
+
+
+
+
+
+        foreach (var numero in listar3)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(numero + ",");
+        }
+
+        break;
+
+    case 4:
+        List<int> listar4 = new List<int>()
+        {
+            1,2,3,4,5,6,7,8,9,
+            10,11,12,13,14,15,16,17,18,19,
+            20,21,22,23,24,25,26,27,28,29,
+            30,31,32,33,34,35,36,37,38,39,
+            40,41,42,43,44,45,46,47,48,49,
+            50,51,52,53,54,55,56,57,58,59,
+            60,61,62,63,64,65,66,67,68,69,
+            70,71,72,73,74,75,76,77,78,79,
+            80
+        };
+
+
+
+        // Primera jugada
+        listar4.Remove(r1);
+        listar4.Remove(r2);
+        listar4.Remove(r3);
+        listar4.Remove(r4);
+        listar4.Remove(r5);
+        listar4.Remove(r6);
+        listar4.Remove(r7);
+        listar4.Remove(r8);
+        listar4.Remove(r9);
+        listar4.Remove(r10);
+
+        // Segunda jugada
+        listar4.Remove(r11);
+        listar4.Remove(r12);
+        listar4.Remove(r13);
+        listar4.Remove(r14);
+        listar4.Remove(r15);
+        listar4.Remove(r16);
+        listar4.Remove(r17);
+        listar4.Remove(r18);
+        listar4.Remove(r19);
+        listar4.Remove(r20);
+
+        // tercera jugada
+        listar4.Remove(r21);
+        listar4.Remove(r22);
+        listar4.Remove(r23);
+        listar4.Remove(r24);
+        listar4.Remove(r25);
+        listar4.Remove(r26);
+        listar4.Remove(r27);
+        listar4.Remove(r28);
+        listar4.Remove(r29);
+        listar4.Remove(r30);
+
+        // Cuarta jugada
+        listar4.Remove(r31);
+        listar4.Remove(r32);
+        listar4.Remove(r33);
+        listar4.Remove(r34);
+        listar4.Remove(r35);
+        listar4.Remove(r36);
+        listar4.Remove(r37);
+        listar4.Remove(r38);
+        listar4.Remove(r39);
+        listar4.Remove(r40);
+
+
+
+
+
+        foreach (var numero in listar4)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(numero + ",");
+        }
+
+        break;
+}
+
+
+
+
 
     Console.WriteLine();
     Console.WriteLine();
@@ -945,6 +1115,52 @@ switch (numjugada)
             Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
         }
         break;
+
+    case 2:
+        int[] coinciden2 = new[]{
+
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20};
+
+
+        foreach (var grouping in coinciden2.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
+
+    case 3:
+        int[] coinciden3 = new[]{
+
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30 };
+
+
+        foreach (var grouping in coinciden3.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
+
+    case 4:
+        int[] coinciden4 = new[]{
+
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
+        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+
+
+        foreach (var grouping in coinciden4.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
+
 }
 
 
