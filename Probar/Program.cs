@@ -12,15 +12,15 @@ namespace Probar
         static void Main(string[] args)
         {
 
-            
-         
-            List<int> data1 = new List<int> { 1, 2, 3, 4, 5 };
-            List<string> data2 = new List<string> { "6", "3" };
 
-            var newData = data1.Select(i => i.ToString()).Intersect(data2);
 
-            Console.WriteLine(newData);
+            int[] id1 = { 44, 26, 92, 30, 71, 38 };
+            int[] id2 = { 39, 59, 83, 47, 26, 4, 30 };
 
+            IEnumerable<int> both = id1.Intersect(id2);
+
+            foreach (int id in both)
+                Console.WriteLine(id);
             Console.ReadKey();
         }
     }
