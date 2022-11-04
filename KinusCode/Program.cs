@@ -1068,25 +1068,86 @@ switch(numjugada)
     //------------------------------------------
     Console.WriteLine();
 
-
-    List<int> lista2 = new List<int> { 
-    r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-    r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-    r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
-    r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
-
-    var listaDistinct = lista2.Distinct();
-
-    Console.ForegroundColor = ConsoleColor.Green;
-    Console.Write("Numero que son unicos: ");
-    foreach (int num in listaDistinct)
-    {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write(num + ",");
-
-    }
+switch (numjugada)
+{
+    case 1:
 
 
+        List<int> listau1 = new List<int> {
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10 };
+
+        var listaDistinct1 = listau1.Distinct();
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.Write("Numero que son unicos: ");
+        foreach (int num in listaDistinct1)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(num + ",");
+
+        }
+        break;
+
+    case 2:
+
+
+        List<int> listau2 = new List<int> {
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20};
+
+        var listaDistinct2 = listau2.Distinct();
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.Write("Numero que son unicos: ");
+        foreach (int num in listaDistinct2)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(num + ",");
+
+        }
+        break;
+
+    case 3:
+
+
+        List<int> listau3 = new List<int> {
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30 };
+
+        var listaDistinct3 = listau3.Distinct();
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.Write("Numero que son unicos: ");
+        foreach (int num in listaDistinct3)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(num + ",");
+
+        }
+        break;
+
+    case 4:
+
+
+        List<int> listau4 = new List<int> {
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
+        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+
+        var listaDistinct4 = listau4.Distinct();
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.Write("Numero que son unicos: ");
+        foreach (int num in listaDistinct4)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(num + ",");
+
+        }
+        break;
+}
 //------------------------------------------
 
 
