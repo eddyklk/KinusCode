@@ -11,42 +11,17 @@ namespace Probar
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            List<int> lista2 = new List<int> {1,2,3,4,5,6,7,8,9,1,0};
-            Random rand = new Random();
 
-            var listaDistinct = lista2.Distinct();
+            
+         
+            List<int> data1 = new List<int> { 1, 2, 3, 4, 5 };
+            List<string> data2 = new List<string> { "6", "3" };
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.Write("Numero que son unicos: ");
-            foreach (int num in listaDistinct)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write(num + ",");
-            }
+            var newData = data1.Select(i => i.ToString()).Intersect(data2);
 
+            Console.WriteLine(newData);
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(" 6 # de los sobrantes: ");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            for (int ctr = 0; ctr <= 9; ctr++)
-           
-            Console.Write("{0,3}", rand.Next(81));
-            Console.WriteLine();
-
-
-            MuestraFrase(1, 2, 2, 3, 4);
-            }
-
-            public static void MuestraFrase(params int[] palabras)
-            {
-                Console.WriteLine(string.Join(" ", palabras));
-                Console.ReadLine();
-
-
-                Console.ReadKey();
-            }
+            Console.ReadKey();
+        }
     }
 }

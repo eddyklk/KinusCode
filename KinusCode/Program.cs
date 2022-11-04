@@ -1114,21 +1114,7 @@ switch (numjugada)
     case 3:
 
 
-        List<int> listau3 = new List<int> {
-        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30 };
-
-        var listaDistinct3 = listau3.Distinct();
-
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.Write("Numero que son unicos: ");
-        foreach (int num in listaDistinct3)
-        {
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.Write(num + " ");
-
-        }
+        a
         break;
 
     case 4:
@@ -1215,9 +1201,26 @@ Console.WriteLine("Numeros que coinciden que tu jugada: ");
 switch (numjugada)
 {
     case 1:
-        int[] coinciden = new[]{
 
-        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
+        List<int> listau3 = new List<int> {
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10};
+
+        List<int>  coinciden6 = new List<int>{
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,
+        s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
+
+
+
+        var listIntersect = listau3.Intersect(coinciden6).ToList();
+
+        Console.WriteLine(listIntersect);
+
+        var listaDistinct3 = listau3.Distinct();
+
+        foreach (int num in listaDistinct3)
+        {
+            Console.Write(num + " ");
+        }
 
 
         foreach (var grouping in coinciden.GroupBy(t => t).Where(t => t.Count() != 1))
@@ -1225,21 +1228,58 @@ switch (numjugada)
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
         }
+
+
+
+
+    
+        var fruits2Names = fruits2.Select(product => product.Name).ToList();
+
+        IEnumerable<List> except = fruits1.Where(product => !fruits2Names.Contains(product.Name));
+
+        foreach (var product in except)
+            Console.WriteLine(product.Name + " " + product.Code);
+
+
+
+        List<int> first = new List<int>() { 1, 2, 3 };
+        List<int> second = new List<int>() { 2, 1, 4 };
+
+        int resp = Convert.ToInt32(!first.OrderBy(x => x).SequenceEqual(second.OrderBy(x => x)));
+
+        Console.WriteLine(resp);
+
         break;
 
     case 2:
+
+        int[] coinciden5 = new[]{
+
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,
+        s13,s14,s15,s16,s17,s18,s19,s20};
+
         int[] coinciden2 = new[]{
 
         r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,
+        s13,s14,s15,s16,s17,s18,s19,s20};
 
-
-        foreach (var grouping in coinciden2.GroupBy(t => t).Where(t => t.Count() != 1))
+        foreach (IGrouping<int, int>? grouping in coinciden2.GroupBy(t => t).Where(t => t.Count() != 1))
         {
+            IEnumerable<IGrouping<int, int>> enumerable = coinciden5.GroupBy(t => t).Where(t => t.Count() != 1);
+
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
         }
+      
+        {
+          
+        }
         break;
+      
 
     case 3:
         int[] coinciden3 = new[]{
@@ -1247,7 +1287,8 @@ switch (numjugada)
         r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
         r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
         r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
-        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,
+        s13,s14,s15,s16,s17,s18,s19,s20};
 
 
         foreach (var grouping in coinciden3.GroupBy(t => t).Where(t => t.Count() != 1))
@@ -1264,7 +1305,8 @@ switch (numjugada)
         r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
         r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
         r31,r32,r33,r34,r35,r36,r37,r38,r39,r40,
-        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20};
+        s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,
+        s13,s14,s15,s16,s17,s18,s19,s20};
 
 
         foreach (var grouping in coinciden4.GroupBy(t => t).Where(t => t.Count() != 1))
