@@ -999,19 +999,68 @@ switch (numjugada)
     Console.ForegroundColor = ConsoleColor.Green;
     Console.WriteLine("Numero que se repiten.");
 
-int[] valores = new[]{
-    r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-    r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-    r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
-    r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+switch(numjugada)
+
+{
+    case 1:
+
+        int[] valores = new[]{
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10};
 
 
-    foreach (var grouping in valores.GroupBy(t => t).Where(t => t.Count() != 1))
-    {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
-    }
+        foreach (var grouping in valores.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
 
+    case 2:
+
+        int[] valoresr2 = new[]{
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20};
+
+
+        foreach (var grouping in valoresr2.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
+
+    case 3:
+
+        int[] valoresr3 = new[]{
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30};
+
+
+        foreach (var grouping in valoresr3.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
+
+    case 4:
+
+        int[] valoresr4 = new[]{
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
+        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
+        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
+        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+
+
+        foreach (var grouping in valoresr4.GroupBy(t => t).Where(t => t.Count() != 1))
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(string.Format("'{0}' está repetido {1} veces.", grouping.Key, grouping.Count()));
+        }
+        break;
+
+}
 
     //------------------------------------------ 
 
@@ -1103,10 +1152,7 @@ switch (numjugada)
     case 1:
         int[] coinciden = new[]{
 
-        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,
-        r11,r12,r13,r14,r15,r16,r17,r18,r19,r20,
-        r21,r22,r23,r24,r25,r26,r27,r28,r29,r30,
-        r31,r32,r33,r34,r35,r36,r37,r38,r39,r40 };
+        r1,r2,r3,r4,r5,r6,r7,r8,r9,r10};
 
 
         foreach (var grouping in coinciden.GroupBy(t => t).Where(t => t.Count() != 1))
