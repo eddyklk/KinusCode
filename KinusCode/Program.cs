@@ -1283,3 +1283,7 @@ switch (numjugada)
 
 }
 while (jugada == true) ;
+
+
+//comparar jugadas anteriores
+//condicion de que si coinciden mas de 10 numero entre el sorteo y los numero registrado imprimir algo grande que diga psobilemente eres millonario.
